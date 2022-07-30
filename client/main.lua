@@ -2,6 +2,16 @@
 
 
 function fullloadout()
+--added for build 2699
+	GiveWeaponToPed(GetPlayerPed(-1),GetHashKey('WEAPON_METALDETECTOR'), 1, 0, false) -- metal detector
+	GiveWeaponToPed(GetPlayerPed(-1),GetHashKey('WEAPON_PRECISIONRIFLE'), 1000, 0, false) -- precision rifle
+	GiveWeaponToPed(GetPlayerPed(-1),GetHashKey('WEAPON_TACTICALRIFLE'), 1000, 0, false) -- tactical rifle
+		GiveWeaponComponentToPed(GetPlayerPed(-1),GetHashKey('WEAPON_TACTICALRIFLE'), GetHashKey('COMPONENT_TACTICALRIFLE_CLIP_02')) --extenede clip
+		GiveWeaponComponentToPed(GetPlayerPed(-1),GetHashKey('WEAPON_TACTICALRIFLE'), GetHashKey('COMPONENT_AT_AR_FLSH_REH')) --flashlight
+		GiveWeaponComponentToPed(GetPlayerPed(-1),GetHashKey('WEAPON_TACTICALRIFLE'), GetHashKey('COMPONENT_AT_AR_SUPP_02')) -- suppressor
+		GiveWeaponComponentToPed(GetPlayerPed(-1),GetHashKey('WEAPON_TACTICALRIFLE'), GetHashKey('COMPONENT_AT_AR_AFGRIP')) -- grip
+		
+		
 		GiveWeaponToPed(GetPlayerPed(-1),-1716189206, 1000, 0, false) --knife
 		GiveWeaponToPed(GetPlayerPed(-1),1737195953, 1000, 0, false) --Nightstick
 		GiveWeaponToPed(GetPlayerPed(-1),1317494643, 1000, 0, false) --Hammer
